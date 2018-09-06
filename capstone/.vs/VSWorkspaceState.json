@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\css"
+    "\\css",
+    "\\datepicker"
   ],
-  "SelectedNode": "\\login.html",
+  "SelectedNode": "\\css\\signin.css",
   "PreviewInSolutionExplorer": false
 }
