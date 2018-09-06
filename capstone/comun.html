@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../../../favicon.ico">
-
-    <title>Sistema Comprobantes de viaje </title>
+    <link rel="icon" href="http://ptoazul.cl/undostres/wp-content/uploads/2017/02/cropped-favicon-puntoazul-300x300.png" sizes="32x32" />
+    <title>CV PtoAzul</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -31,22 +30,16 @@
 
 <body class="bg-light">
 
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
-        <a class="navbar-brand" href="#">Punto Azul</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#">
+            <img src="logo-puntoazul.png" width="180" height="50" class="d-inline-block align-top" alt="">
+
+        </a>
 
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Nuevo Comprobante<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Disabled</a>
+                    <a class="nav-link" href="#">Crear Comprobante<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Agregar</a>
@@ -64,6 +57,7 @@
                     <div class="dropdown-menu" aria-labelledby="dropdown01">
                         <a class="dropdown-item" href="#">Camiones</a>
                         <a class="dropdown-item" href="#">Clientes</a>
+                        <a class="dropdown-item" href="#">Comprobantes</a>
                         <a class="dropdown-item" href="#">Conductores</a>
                         <a class="dropdown-item" href="#">Proveedores</a>
                         <a class="dropdown-item" href="#">Recepcionistas</a>
@@ -71,14 +65,16 @@
                     </div>
                 </li>
             </ul>
-         
+
         </div>
     </nav>
 
 
     <div class="container">
         <div class="py-5 text-center">
-          <hr/>
+            <hr />
+            <img class="d-block mx-auto mb-4" src="http://ptoazul.cl/undostres/wp-content/uploads/2017/02/cropped-favicon-puntoazul-300x300.png" alt="" width="88" height="88">
+
             <h2>Nuevo Comprobante de viajes</h2>
             <p class="lead"> Ingresar información del comprobante debajo.</p>
         </div>
@@ -97,9 +93,6 @@
                         <label class="custom-control-label" for="same-address">Rechazo</label>
                     </div>
                 </div>
-
-
-
 
                 <div class="col-md-3 mb-10">
                     <div class="custom-control-inline custom-checkbox">
@@ -133,28 +126,34 @@
             <h4 class="mb-3">Ingrese Información de Comprobante</h4>
             <hr class="mb-4">
 
-            <div class="row">
-                <div class="col-md-2 mb-3">
-                    <label for="">N° de Folio</label>
-                    <input class="form-control" type="text" placeholder="" readonly>
-                </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="col-md-6 pull-left">
+                            <label for="">N° de Folio</label>
+                        </div>
+                        <input class="form-control" type="text" placeholder="" readonly>
+                    </div>
 
-                <div class="col-md-2 mb-3">
-                    <label for="">Fecha de Documento</label>
-                    <input class="datepicker" type="text" name="">
-                </div>
+                    <div class="col-sm">
+                        <div class="col-md-6 pull-left">
+                            <label for="">Fecha Documento</label>
+                        </div>
+                        <input class="datepicker" type="text" name="">
+                    </div>
 
-                <div class="col-md-2 mb-3">
-                    <label for="">Fecha de Comprobante</label>
-                    <input class="datepicker" type="text" placeholder="">
-                </div>
+                    <div class="col-sm">
+                        <div class="col-md-6 pull-left">
+                            <label for="">Fecha Comprobante</label>
+                        </div>
+                        <input class="datepicker" type="text" placeholder="">
+                    </div>
 
-                <div class="></div>"col-md-2 mb-3">
-               <input class="datepicker" type="text" name="date">
-                </div>
 
+                </div>
             </div>
 
+            <hr class="mb-4">
             <div class="row">
                 <div class="col-md-2 mb-3">
                     <label for="state">Transporte</label>
@@ -206,9 +205,7 @@
                 <div class="col-md-2 mb-3">
                     <label for="email">Capacidad<span class="text-muted">(Pallets)</span></label>
                     <input type="email" class="form-control" id="email" placeholder="" readonly>
-                    <div class="invalid-feedback">
-                        Please enter a valid email address for shipping updates.
-                    </div>
+
                 </div>
             </div>
 
@@ -218,15 +215,15 @@
 
 
             <button class="btn btn-primary btn-lg btn-block" type="submit">Siguiente</button>
-</form>
-    
+    </form>
+
 
     <footer class="my-5 pt-5 text-muted text-center text-small">
         <p class="mb-1">&copy; 2018-2019 Punto Azul SA</p>
         <ul class="list-inline">
-            <li class="list-inline-item"><a href="https://www.ptoazul.cl">Privacy</a></li>
+            <li class="list-inline-item"><a href="https://www.ptoazul.cl">Página web</a></li>
             <li class="list-inline-item"><a href="#">Terms</a></li>
-            <li class="list-inline-item"><a href="#">Support</a></li>
+            <li class="list-inline-item"><a href="http://ptoazul.cl/contacto/">Contacto</a></li>
         </ul>
     </footer>
     </div>
