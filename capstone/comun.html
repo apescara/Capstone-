@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="http://ptoazul.cl/undostres/wp-content/uploads/2017/02/cropped-favicon-puntoazul-300x300.png" sizes="32x32" />
-    <title>CV PtoAzul</title>
+    <title>Punto Azul CV</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -14,16 +14,7 @@
     <!-- Custom styles for this template -->
     <link href="css/form-validation.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <script src="js/main.js"></script>
-    <script src="js/bootstrap-datepicker.js"></script>
-    <script>
-        $(function () {
-            $('.datepicker').datepicker();
-        });
-    </script>
-
+    
 
 
 </head>
@@ -69,6 +60,7 @@
         </div>
     </nav>
 
+  <br />
 
     <div class="container">
         <div class="py-5 text-center">
@@ -87,13 +79,13 @@
 
 
             <div class="row">
-                <div class="col-md-3 mb-8">
+                <div class="col-sm">
                     <div class="custom-control-inline custom-checkbox">
                         <input type="checkbox" class="custom-control-input" id="same-address">
                         <label class="custom-control-label" for="same-address">Rechazo</label>
                     </div>
                 </div>
-
+                
                 <div class="col-md-3 mb-10">
                     <div class="custom-control-inline custom-checkbox">
                         <input type="checkbox" class="custom-control-input" id="s1">
@@ -126,6 +118,8 @@
             <h4 class="mb-3">Ingrese Información de Comprobante</h4>
             <hr class="mb-4">
 
+
+
             <div class="container">
                 <div class="row">
                     <div class="col-sm">
@@ -139,14 +133,25 @@
                         <div class="col-md-6 pull-left">
                             <label for="">Fecha Documento</label>
                         </div>
-                        <input class="datepicker" type="text" name="">
+                        <input class="datepicker" type="text" name="" lang="es">
                     </div>
 
                     <div class="col-sm">
                         <div class="col-md-6 pull-left">
-                            <label for="">Fecha Comprobante</label>
+                            <label for="">Fecha de Documento</label>
                         </div>
-                        <input class="datepicker" type="text" placeholder="">
+                        <input class="datepicker" type="text" placeholder="" lang="es">
+                    </div>
+
+                    <div class="col-md-2 mb-3">
+                        <label for="state">Recepcionista</label>
+                        <select class="custom-select d-block w-100" id="" required>
+                            <option value=""></option>
+                            <option></option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Escoger un Recepcionista válido.
+                        </div>
                     </div>
 
 
@@ -215,18 +220,18 @@
 
 
             <button class="btn btn-primary btn-lg btn-block" type="submit">Siguiente</button>
-    </form>
+</form>
 
 
     <footer class="my-5 pt-5 text-muted text-center text-small">
         <p class="mb-1">&copy; 2018-2019 Punto Azul SA</p>
         <ul class="list-inline">
             <li class="list-inline-item"><a href="https://www.ptoazul.cl">Página web</a></li>
-            <li class="list-inline-item"><a href="#">Terms</a></li>
+            <li class="list-inline-item"><a href="#">???</a></li>
             <li class="list-inline-item"><a href="http://ptoazul.cl/contacto/">Contacto</a></li>
         </ul>
     </footer>
-    </div>
+
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -236,6 +241,21 @@
     <script src="../../assets/js/vendor/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="../../assets/js/vendor/holder.min.js"></script>
+
+
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+
+    <script>
+        $(function () {
+            $('.datepicker').datepicker();
+        });
+    </script>
+
 
     <script>
         // Example starter JavaScript for disabling form submissions if there are invalid fields
