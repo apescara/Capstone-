@@ -1,20 +1,22 @@
-﻿!doctype html>
+﻿
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="description" content="">
-	<meta name="author" content="">
-	<link rel="icon" href="http://ptoazul.cl/undostres/wp-content/uploads/2017/02/cropped-favicon-puntoazul-300x300.png" sizes="32x32" />
-	<title>Punto Azul CV</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="http://ptoazul.cl/undostres/wp-content/uploads/2017/02/cropped-favicon-puntoazul-300x300.png" sizes="32x32" />
+    <title>Punto Azul CV</title>
 
-	<!-- Bootstrap core CSS -->
-	<link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-	<!-- Custom styles for this template -->
-	<link href="css/form-validation.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/form-validation.css" rel="stylesheet">
 
+    <link rel="stylesheet" type="text/css" href="css/dataTables.bootstrap.css">
 
+    <link href="css/dataTables.bootstrap4.css" rel="stylesheet">
 
 
 
@@ -23,94 +25,252 @@
 
 <body class="bg-light">
 
-	<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-		<a class="navbar-brand" href="#">
-			<img src="logo-puntoazul.png" width="180" height="50" class="d-inline-block align-top" alt="">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#">
+            <img src="logo-puntoazul.png" width="180" height="50" class="d-inline-block align-top" alt="">
 
-		</a>
+        </a>
 
-		<div class="collapse navbar-collapse" id="navbarsExampleDefault">
-			<ul class="navbar-nav mr-auto">
-				<li class="nav-item active">
-					<a class="nav-link" href="#">Crear Comprobante<span class="sr-only">(current)</span></a>
-				</li>
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Agregar</a>
-					<div class="dropdown-menu" aria-labelledby="dropdown01">
-						<a class="dropdown-item" href="#">Camion</a>
-						<a class="dropdown-item" href="#">Cliente</a>
-						<a class="dropdown-item" href="#">Conductor</a>
-						<a class="dropdown-item" href="#">Proveedor</a>
-						<a class="dropdown-item" href="#">Recepcionista</a>
-						<a class="dropdown-item" href="#">Empresa de Transporte</a>
-					</div>
-				</li>
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Registro</a>
-					<div class="dropdown-menu" aria-labelledby="dropdown01">
-						<a class="dropdown-item" href="#">Camiones</a>
-						<a class="dropdown-item" href="#">Clientes</a>
-						<a class="dropdown-item" href="#">Comprobantes</a>
-						<a class="dropdown-item" href="#">Conductores</a>
-						<a class="dropdown-item" href="#">Proveedores</a>
-						<a class="dropdown-item" href="#">Recepcionistas</a>
-						<a class="dropdown-item" href="#">Empresas de Transporte</a>
-					</div>
-				</li>
-			</ul>
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Crear Comprobante<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Agregar</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown01">
+                        <a class="dropdown-item" href="#">Camion</a>
+                        <a class="dropdown-item" href="#">Cliente</a>
+                        <a class="dropdown-item" href="#">Conductor</a>
+                        <a class="dropdown-item" href="#">Proveedor</a>
+                        <a class="dropdown-item" href="#">Recepcionista</a>
+                        <a class="dropdown-item" href="#">Empresa de Transporte</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Registro</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown01">
+                        <a class="dropdown-item" href="#">Camiones</a>
+                        <a class="dropdown-item" href="#">Clientes</a>
+                        <a class="dropdown-item" href="#">Comprobantes</a>
+                        <a class="dropdown-item" href="#">Conductores</a>
+                        <a class="dropdown-item" href="#">Proveedores</a>
+                        <a class="dropdown-item" href="#">Recepcionistas</a>
+                        <a class="dropdown-item" href="#">Empresas de Transporte</a>
+                    </div>
+                </li>
+            </ul>
 
-		</div>
-	</nav>
+        </div>
+    </nav>
 
-	<br />
-	<div class="container">
-		<div class="py-5 text-center">
-			<hr />
-			<img class="d-block mx-auto mb-4" src="http://ptoazul.cl/undostres/wp-content/uploads/2017/02/cropped-favicon-puntoazul-300x300.png" alt="" width="88" height="88">
+    <br />
+  
 
-			<h2>Registro de Camiones</h2>
-			
-		</div>
-	</div>
+    <hr class="mb-4">
 
+    <div class="container">
+        <h1>Registro de Camiones</h1>
+        <table class="table table-striped table-bordered table-hover" id="mydata">
+            <thead>
+                <tr>
+                    <th> Empresa</th>
+                    <th> Patente</th>
+                    <th> Capacidad</th>
+                    <th> Tipo</th>
+                    <th>Interno o Externo</th>
 
-	<hr class="mb-4">
+                </tr>
 
+            </thead>
 
+            <tfoot>
+                <tr>
+                    <th> Empresa</th>
+                    <th> Patente</th>
+                    <th>Capacidad</th>
+                    <th> Tipo</th>
+                    <th> Interno Externo</th>
 
-
-	<button class="btn btn-primary btn-lg btn-block" type="submit">Siguiente</button>
-	</form>
-
-
-	<footer class="my-5 pt-5 text-muted text-center text-small">
-		<p class="mb-1">&copy; 2018-2019 Punto Azul SA</p>
-		<ul class="list-inline">
-			<li class="list-inline-item"><a href="https://www.ptoazul.cl">P�gina web</a></li>
-			<li class="list-inline-item"><a href="#">???</a></li>
-			<li class="list-inline-item"><a href="http://ptoazul.cl/contacto/">Contacto</a></li>
-		</ul>
-	</footer>
-
-
-	<!-- Bootstrap core JavaScript
-	================================================== -->
-	<!-- Placed at the end of the document so the pages load faster -->
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-	<script src="../../assets/js/vendor/popper.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="../../assets/js/vendor/holder.min.js"></script>
+                </tr>
 
 
+            </tfoot>
+            <tbody>
 
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/css/bootstrap.min.css">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js"></script>
+                <tr>
+                    <td> 23918120</td>
+                    <td> Carlos</td>
+                    <td>asdas</td>
+                    <td> asdas </td>
+                    <td> Litorina</td>
+
+                </tr>
+
+                <tr>
+                    <td> 23918120</td>
+                    <td> Carlos</td>
+                    <td>asdas</td>
+                    <td> asdas </td>
+                    <td> Litorina</td>
+
+                </tr>
+                <tr>
+                    <td> 23918120</td>
+                    <td> Carlos</td>
+                    <td>asdas</td>
+                    <td> asdas </td>
+                    <td> Litorina</td>
+
+                </tr>
+                <tr>
+                    <td> 23918120</td>
+                    <td> Carlos</td>
+                    <td>asdas</td>
+                    <td> asdas </td>
+                    <td> Litorina</td>
+
+                </tr>
+                <tr>
+                    <td> 23918120</td>
+                    <td> Carlos</td>
+                    <td>asdas</td>
+                    <td> asdas </td>
+                    <td> Litorina</td>
+
+                </tr>
+                <tr>
+                    <td> 23918120</td>
+                    <td> Carlos</td>
+                    <td>asdas</td>
+                    <td> asdas </td>
+                    <td> Litorina</td>
+
+                </tr>
+                <tr>
+                    <td> 23918120</td>
+                    <td> Carlos</td>
+                    <td>asdas</td>
+                    <td> asdas </td>
+                    <td> Litorina</td>
+
+                </tr>
+                <tr>
+                    <td> 23918120</td>
+                    <td> Carlos</td>
+                    <td>asdas</td>
+                    <td> asdas </td>
+                    <td> Litorina</td>
+
+                </tr>
+                <tr>
+                    <td> 23918120</td>
+                    <td> Pedro</td>
+                    <td>asdas</td>
+                    <td> asdas </td>
+                    <td> Litorina</td>
+
+                </tr>
+                <tr>
+                    <td> 23918120</td>
+                    <td> Pedro</td>
+                    <td>asdas</td>
+                    <td> asdas </td>
+                    <td> Litorina</td>
+
+                </tr>
+                <tr>
+                    <td> 23918120</td>
+                    <td> Pedro</td>
+                    <td>asdas</td>
+                    <td> asdas </td>
+                    <td> Litorina</td>
+
+                </tr>
+                <tr>
+                    <td> 23918120</td>
+                    <td> Pedro</td>
+                    <td>asdas</td>
+                    <td> asdas </td>
+                    <td> Litorina</td>
+
+                </tr>
+                <tr>
+                    <td> 23918120</td>
+                    <td> Pedro</td>
+                    <td>asdas</td>
+                    <td> asdas </td>
+                    <td> Litorina</td>
+
+                </tr>
+                <tr>
+                    <td> 23918120</td>
+                    <td> Pedro</td>
+                    <td>asdas</td>
+                    <td> asdas </td>
+                    <td> Litorina</td>
+
+                </tr>
+                <tr>
+                    <td> 23918120</td>
+                    <td> Pedro</td>
+                    <td>asdas</td>
+                    <td> asdas </td>
+                    <td> Litorina</td>
+
+                </tr>
+                <tr>
+                    <td> 23918120</td>
+                    <td> Pedro</td>
+                    <td>asdas</td>
+                    <td> asdas </td>
+                    <td> Litorina</td>
+
+                </tr>
+            </tbody>
 
 
-	<script>
+        </table>
+    </div>
+
+
+
+    <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1">&copy; 2018-2019 Punto Azul SA</p>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="https://www.ptoazul.cl">P�gina web</a></li>
+            <li class="list-inline-item"><a href="#">???</a></li>
+            <li class="list-inline-item"><a href="http://ptoazul.cl/contacto/">Contacto</a></li>
+        </ul>
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../assets/js/vendor/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="../../assets/js/vendor/holder.min.js"></script>
+
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js"></script>
+
+
+    <script type="text/javascript" charset="utf8" src="js/dataTables.boostrap.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#table_id').DataTable();
+        });</script>
+
+
+    <script>
         // Example starter JavaScript for disabling form submissions if there are invalid fields
         (function () {
             'use strict';
@@ -131,6 +291,20 @@
                 });
             }, false);
         })();
-	</script>
+    </script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.dataTables.min.js"></script>
+    <script src="js/dataTables.bootstrap.min.js"></script>
+
+
+    <script>
+        $('#mydata').dataTable();
+    </script>
+
+
+
 </body>
 </html>
