@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\js"
   ],
-  "SelectedNode": "\\login.html",
+  "SelectedNode": "\\js\\bootstrap.min.js",
   "PreviewInSolutionExplorer": false
 }
