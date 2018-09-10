@@ -60,7 +60,7 @@
         </div>
     </nav>
 
-  <br />
+    <br />
 
     <div class="container">
         <div class="py-5 text-center">
@@ -69,6 +69,16 @@
 
             <h2>Nuevo Comprobante de viajes</h2>
             <p class="lead"> Ingresar información del comprobante debajo.</p>
+            <h1>
+            <?php
+            $con = mysqli_connect("localhost","root","","comprobantes");
+            $sql = mysqli_query($con, "SELECT Nombre_Emp_Transporte FROM empresa_transporte");
+            while($row = mysqli_fetch_assoc($sql)){
+            $stringTest = $row['Nombre_Emp_Transporte'];
+            echo $stringTest;
+            }
+            ?>
+            </h1>   
         </div>
     </div>
 
@@ -85,7 +95,7 @@
                         <label class="custom-control-label" for="same-address">Rechazo</label>
                     </div>
                 </div>
-                
+
                 <div class="col-md-3 mb-10">
                     <div class="custom-control-inline custom-checkbox">
                         <input type="checkbox" class="custom-control-input" id="s1">
@@ -163,8 +173,14 @@
                 <div class="col-md-2 mb-3">
                     <label for="state">Transporte</label>
                     <select class="custom-select d-block w-100" id="" required>
-                        <option value=""></option>
-                        <option></option>
+                        <?php
+                        $con = mysqli_connect("localhost","root","","comprobantes");
+                        $sql = mysqli_query($con, "SELECT * FROM comprobates.empresa_transporte");
+                        while ( $results[] = mysqli_fetch_object ( $sql ) );
+                        array_pop ( $results );
+                        foreach ( $results as $option ) :
+                        echo "<option value='".$option->ID_Emp_Transporte."'>".$option->Nombre_Emp_Transporte."</option>";
+                        endforeach; ?>
                     </select>
                     <div class="invalid-feedback">
                         Escoger un transportista válido.
@@ -220,7 +236,7 @@
 
 
             <button class="btn btn-primary btn-lg btn-block" type="submit">Siguiente</button>
-</form>
+    </form>
 
 
     <footer class="my-5 pt-5 text-muted text-center text-small">
@@ -241,6 +257,7 @@
     <script src="../../assets/js/vendor/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="../../assets/js/vendor/holder.min.js"></script>
+
 
 
 
