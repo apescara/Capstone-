@@ -30,12 +30,15 @@
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
+                    <a class="nav-link" href="#">Inicio<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
                     <a class="nav-link" href="#">Crear Comprobante<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Agregar</a>
                     <div class="dropdown-menu" aria-labelledby="dropdown01">
-                        <a class="dropdown-item" href="#">Cami�n</a>
+                        <a class="dropdown-item" href="#">Camión</a>
                         <a class="dropdown-item" href="#">Cliente</a>
                         <a class="dropdown-item" href="#">Conductor</a>
                         <a class="dropdown-item" href="#">Proveedor</a>
@@ -77,61 +80,45 @@
             <hr class="mb-4">
 
 
-
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-2 mb-3">
-                        <label for="state">Empresa</label>
-                        <select class="custom-select d-block w-100" id="" required>
-                            <option value=""></option>
-                            <option></option>
-                        </select>
-                        <div class="invalid-feedback">
-
-                        </div>
-                    </div>
-
-                    <div class="col-sm">
-                        <div class="col-md-6 pull-left">
-                            <label for="">Patente</label>
-                        </div>
-                        <input class="form-control" type="text" name="">
-                    </div>
-
-                    <div class="col-sm">
-                        <div class="col-md-6 pull-left">
-                            <label for="">Capacidad</label>
-                        </div>
-                        <input class="form-control" type="text" placeholder="" lang="es">
-                    </div>
-
-                    <div class="col-md-2 mb-3">
-                        <label for="state">Tipo</label>
-                        <select class="custom-select d-block w-100" id="" required>
-                            <option value="">Camion</option>
-                            <option>Rampla</option>
-                        </select>
-                        <div class="invalid-feedback">
-
-                        </div>
-                    </div>
-
-                    <div class="col-md-2 mb-3">
-                    <label for="state">Interno o Externo</label>
-                    <select class="custom-select d-block w-100" id="" required>
-                        <option value="">Interno</option>
-                        <option>Externo</option>
-                    </select>
-                    <div class="invalid-feedback">
-
-                    </div>
-                </div>
-
-
-                </div>
+            <div class="form-group" style="width:180px">
+                <label for="formGroupExampleInput">Empresa de Transporte:</label>
+                <select class="custom-select d-block w-100" id="" required>
+                    <option value=""></option>
+                    <option>10</option>
+                    <option>15</option>
+                </select>
+            </div>
+            <p></p>
+            <div class="form-group" style="width:180px">
+                <label for="formGroupExampleInput2">Patente(sin guión):</label>
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Razon Social"  style="width:180px" >
+            </div>
+            <p></p>
+            <div class="form-group" style="width:180px">
+                <label for="formGroupExampleInput">Empresa de Transporte:</label>
+                <select class="custom-select d-block w-100" id="" required>
+                    <option value=""></option>
+                    <option>Interno</option>
+                    <option>Externo</option>
+                </select>
+            </div>
+            <p></p>
+            <div class="form-group" style="width:180px">
+                <label for="formGroupExampleInput">Empresa de Transporte:</label>
+                <select class="custom-select d-block w-100" id="" required >
+                    <option value=""></option>
+                    <option>Camion</option>
+                    <option>Rampla</option>
+                </select>
+            </div>
+            <p></p>
+            <div class="form-group" style="width:180px">
+                <label for="formGroupExampleInput2"">Capacidad del Camion: </label>
+                <input type="text" class="form-control" id="formGroupExampleInput2" style="width:180px" placeholder="Capacidad">
             </div>
 
-            
+
+
 
             <hr class="mb-4">
 
@@ -139,7 +126,7 @@
 
 
             <button class="btn btn-primary btn-lg btn-block" type="submit">Guardar</button>
-    </form>
+</form>
 
 
     <footer class="my-5 pt-5 text-muted text-center text-small">

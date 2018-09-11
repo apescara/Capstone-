@@ -30,8 +30,12 @@
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
+                    <a class="nav-link" href="#">Inicio<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
                     <a class="nav-link" href="#">Crear Comprobante<span class="sr-only">(current)</span></a>
                 </li>
+
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Agregar</a>
                     <div class="dropdown-menu" aria-labelledby="dropdown01">
@@ -67,56 +71,58 @@
             <hr />
             <img class="d-block mx-auto mb-4" src="http://ptoazul.cl/undostres/wp-content/uploads/2017/02/cropped-favicon-puntoazul-300x300.png" alt="" width="88" height="88">
 
-            <h2>Agregar Cliente</h2>
+            <h2>Agregar Conductor</h2>
         </div>
     </div>
 
     <form class="needs-validation form-inline justify-content-center" novalidate>
         <div class="col-md-8 order-md-8">
-            <h4 class="mb-3" text-center>Informacion del Nuevo Cliente</h4>
+            <h4 class="mb-3">Información del Nuevo Conductor</h4>
             <hr class="mb-4">
-        
-    </form>
 
-    
-    <form>
-        <div class="form-group" style="width:180px">
-            <label for="formGroupExampleInput">Nombre de Cliente:</label>
-            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nombre">
-        </div>
-        <p></p>
-        <div class="form-group" style="width:180px">
-            <label for="formGroupExampleInput2">Razón Social:</label>
-            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Razon Social">
-        </div>
-        <p></p>
-        <div class="form-group" style="width:180px">
-            <label for="formGroupExampleInput2">RUT Cliente:</label>
-            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="RUT(sin puntos ni guion)">
-        </div>
-        <p></p>
 
-        <div class="form-group" style="width:180px">
-            <label for="formGroupExampleInput2">Email de contacto: </label>
-            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Email de contacto">
-        </div>
 
-    </form>
-   
+            <div class="form-group" style="width:180px">
+                <label for="formGroupExampleInput2">Nombre:</label>
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Nombre" style="width:180px">
+            </div>
+            <p></p>
+            <div class="form-group" style="width:180px">
+                <label for="formGroupExampleInput2">Apellido:</label>
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Apellido" style="width:180px">
+            </div>
+            <p></p>
+            <div class="form-group" style="width:180px">
+                <label for="formGroupExampleInput">Empresa de Transporte:</label>
+                <select class="custom-select d-block w-100" id="" required>
+                    <option value=""></option>
+                    <option></option>
+                
+                </select>
+            </div>
 
-    <hr class="mb-4">
+            <p></p>
+            <div class="form-group" style="width:180px">
+                <label for="formGroupExampleInput2" ">Email de Contacto: </label>
+                <input type="text" class="form-control" id="formGroupExampleInput2" style="width:180px" placeholder="Email">
+            </div>
 
 
 
 
-    <button class="btn btn-primary btn-lg btn-block" type="submit">Guardar</button>
+            <hr class="mb-4">
 
+
+
+
+            <button class="btn btn-primary btn-lg btn-block" type="submit">Guardar</button>
+</form>
 
 
     <footer class="my-5 pt-5 text-muted text-center text-small">
         <p class="mb-1">&copy; 2018-2019 Punto Azul SA</p>
         <ul class="list-inline">
-            <li class="list-inline-item"><a href="https://www.ptoazul.cl">P�gina web</a></li>
+            <li class="list-inline-item"><a href="https://www.ptoazul.cl">Pagina web</a></li>
             <li class="list-inline-item"><a href="#">???</a></li>
             <li class="list-inline-item"><a href="http://ptoazul.cl/contacto/">Contacto</a></li>
         </ul>
