@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using EntitiesLayer;
+using BLogicLayer;
 
 namespace Capstone5
 {
@@ -21,17 +23,14 @@ namespace Capstone5
 
         protected void btnIngresar_Click(object sender, EventArgs e)
         {
-            string user = txtUsuario.Text;
-            string password = txtPassword.Text;
-            string userName = "ernesto";
-            string passName = "123";
-            if(user.Equals(userName) && password.Equals(passName)){
-                Response.Write("<script>alert('Usuario correcto')</script>");
-                Response.Redirect("PanelGeneral.aspx");
+            Usuario objUsuario = UsuarioBL.getInstance().SystemAccess(txtUsuario.Text, txtPassword.Text);
+            if(objUsuario != null)
+            {
+                Response.Write("<script>alert('USUARIO CORRECTO')</script>");
             }
             else
             {
-                Response.Write("<script>alert('Usuario incorrecto')</script>");
+                Response.Write("<script>alert('USUARIO INCORRECTO')</script>");
             }
         }
     }

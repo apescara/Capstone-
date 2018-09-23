@@ -1,0 +1,11 @@
+E:\GitHub\Capstone-\Capstone4\Capstone5\BLogicLayer\bin\Debug\BLogicLayer.dll
+E:\GitHub\Capstone-\Capstone4\Capstone5\BLogicLayer\bin\Debug\BLogicLayer.pdb
+E:\GitHub\Capstone-\Capstone4\Capstone5\BLogicLayer\bin\Debug\DALayer.dll
+E:\GitHub\Capstone-\Capstone4\Capstone5\BLogicLayer\bin\Debug\EntitiesLayer.dll
+E:\GitHub\Capstone-\Capstone4\Capstone5\BLogicLayer\bin\Debug\DALayer.pdb
+E:\GitHub\Capstone-\Capstone4\Capstone5\BLogicLayer\bin\Debug\EntitiesLayer.pdb
+E:\GitHub\Capstone-\Capstone4\Capstone5\BLogicLayer\obj\Debug\BLogicLayer.csprojAssemblyReference.cache
+E:\GitHub\Capstone-\Capstone4\Capstone5\BLogicLayer\obj\Debug\BLogicLayer.csproj.CoreCompileInputs.cache
+E:\GitHub\Capstone-\Capstone4\Capstone5\BLogicLayer\obj\Debug\BLogicLayer.csproj.CopyComplete
+E:\GitHub\Capstone-\Capstone4\Capstone5\BLogicLayer\obj\Debug\BLogicLayer.dll
+E:\GitHub\Capstone-\Capstone4\Capstone5\BLogicLayer\obj\Debug\BLogicLayer.pdb
