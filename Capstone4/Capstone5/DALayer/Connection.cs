@@ -10,9 +10,11 @@ namespace DALayer
 {
     public class Connection
     {
+
         #region "SINGLETON"
         private static Connection connection = null;
         private Connection() { }
+
         public static Connection getInstance()
         {
             if(connection == null)
@@ -26,7 +28,7 @@ namespace DALayer
         public SqlConnection DBConnection()
         {
             SqlConnection connection = new SqlConnection();
-            connection.ConnectionString = "Data Source =127.0.0.1; Initial Catalog=comprobantes; User ID=root; Password=";
+            connection.ConnectionString = @"Data Source =200.111.160.91\sosql2014; Initial Catalog=PRUEBA2; User ID=sa; Password=Softland510";
             return connection;
         }
     }

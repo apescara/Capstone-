@@ -36,8 +36,8 @@ namespace DALayer
                 connection = Connection.getInstance().DBConnection();
                 cmd = new SqlCommand("spSystemAccess", connection);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("prmUser", user);
-                cmd.Parameters.AddWithValue("prmPassword", password);
+                cmd.Parameters.AddWithValue("@prmUser", user);
+                cmd.Parameters.AddWithValue("@prmPassword", password);
                 connection.Open();
                 dr = cmd.ExecuteReader();
                 if (dr.Read())
@@ -45,7 +45,7 @@ namespace DALayer
                     objUser = new Usuario();
                     objUser.ID = Convert.ToInt32(dr["idUsuario"].ToString());
                     objUser.nombreUsuario = dr["usuario"].ToString();
-                    objUser.Password = dr["passwordUsuario"].ToString();
+                    objUser.Password = dr["password"].ToString();
                 }
             }
             catch(Exception ex)
