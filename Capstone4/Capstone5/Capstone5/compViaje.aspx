@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Home.Master" AutoEventWireup="true" CodeBehind="compViaje.aspx.cs" Inherits="Capstone5.compViaje" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-   
+    <link href="css/bootstrap-datepicker.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <section class="¨content-header">
@@ -64,13 +64,12 @@
                         <div class="form-group">
                             <div class="form-group">
                        
-                        <div class="input-group">
-                            <div class="input-group-addon">
-                                <i class="fa fa-calendar"></i>
-                            </div>
-                            <asp:TextBox ID="TextBox1" CssClass="form-control" data-inputmask="'alias': 'dd/mm/yyyy'"
-                                data-mask="" runat="server"></asp:TextBox>
-                        </div>
+                         <div class="input-group date">
+                  <div class="input-group-addon">
+                    <i class="fa fa-calendar"></i>
+                  </div>
+                  <input type="text" class="form-control pull-right" id="datepicker">
+                </div>
                     </div>
                         </div>
 
@@ -145,9 +144,12 @@
                     </tr>
                 </table>
         </div>
-
-      
-       
+        <script src="js/bootstrap-datepicker.js"></script>
+    
+<script> 
+    $('#datepicker').datepicker({
+      autoclose: true
+    })</script>
 
     </section>
 </asp:Content>
