@@ -1,0 +1,9 @@
+E:\GitHub\Capstone-\Capstone4\Capstone5\DALayer\bin\Debug\DALayer.dll
+E:\GitHub\Capstone-\Capstone4\Capstone5\DALayer\bin\Debug\DALayer.pdb
+E:\GitHub\Capstone-\Capstone4\Capstone5\DALayer\bin\Debug\EntitiesLayer.dll
+E:\GitHub\Capstone-\Capstone4\Capstone5\DALayer\bin\Debug\EntitiesLayer.pdb
+E:\GitHub\Capstone-\Capstone4\Capstone5\DALayer\obj\Debug\DALayer.csprojAssemblyReference.cache
+E:\GitHub\Capstone-\Capstone4\Capstone5\DALayer\obj\Debug\DALayer.csproj.CoreCompileInputs.cache
+E:\GitHub\Capstone-\Capstone4\Capstone5\DALayer\obj\Debug\DALayer.csproj.CopyComplete
+E:\GitHub\Capstone-\Capstone4\Capstone5\DALayer\obj\Debug\DALayer.dll
+E:\GitHub\Capstone-\Capstone4\Capstone5\DALayer\obj\Debug\DALayer.pdb
