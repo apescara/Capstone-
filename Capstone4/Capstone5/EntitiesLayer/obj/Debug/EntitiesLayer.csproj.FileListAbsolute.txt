@@ -1,0 +1,6 @@
+E:\GitHub\Capstone-\Capstone4\Capstone5\EntitiesLayer\bin\Debug\EntitiesLayer.dll
+E:\GitHub\Capstone-\Capstone4\Capstone5\EntitiesLayer\bin\Debug\EntitiesLayer.pdb
+E:\GitHub\Capstone-\Capstone4\Capstone5\EntitiesLayer\obj\Debug\EntitiesLayer.csprojAssemblyReference.cache
+E:\GitHub\Capstone-\Capstone4\Capstone5\EntitiesLayer\obj\Debug\EntitiesLayer.csproj.CoreCompileInputs.cache
+E:\GitHub\Capstone-\Capstone4\Capstone5\EntitiesLayer\obj\Debug\EntitiesLayer.dll
+E:\GitHub\Capstone-\Capstone4\Capstone5\EntitiesLayer\obj\Debug\EntitiesLayer.pdb
